@@ -1,9 +1,5 @@
 # roblox-js-server
 
-[![ROBLOX API Discord](https://img.shields.io/badge/discord-roblox%20api%20chat-blue.svg?style=flat-square)](https://discord.gg/EDXNdAT)
-
-This is a primitive example server that uses my [roblox-js](https://github.com/sentanos/roblox-js) library, allowing users to execute site actions from in-game via HttpService.
-
 ## Instructions
 
 Go to settings.json and set `username` and `password` to the username and password of the ROBLOX account you want to use. The `key` field is essentially a password for the site (to prevent strangers from accessing account functions). There is also an optional setting `maximumRank` which can be used to prevent attacks. User's above this rank are immune from having their rank changed and attempts to change a user's rank to something above this will be rejected. I recommend generating a random string or just smashing your keyboard since this will typically be accessed by another script that doesn't have to memorize said key.
